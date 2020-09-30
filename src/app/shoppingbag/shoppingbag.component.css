@@ -1,0 +1,11 @@
+.image {
+  height: 90px;
+}
+
+.row{
+  border-bottom: 1px solid #999999;
+  padding:10px;
+}
+input{
+  width:40px;
+}

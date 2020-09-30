@@ -1,0 +1,27 @@
+<div class="container p-5 m-5" *ngIf="countedItems.length == 0">
+  <div class="row">
+    <div class="col" style="text-align: center">
+      Your shopping bag feels so light. Please put some weight in it by selecting some <a [routerLink]="['/']">
+      products</a>
+    </div>
+  </div>
+</div>
+
+<div class="container" *ngIf="countedItems">
+  <div class="row" *ngFor="let item of countedItems">
+    <div class="col-2">
+      <img class="image" [src]="item.item.img">
+    </div>
+
+    <div class="col-6 d-flex align-items-center">
+      {{ item.item.name }}
+    </div>
+    <div class="col-2 d-flex align-items-center">
+      Qty.: {{item.count}}
+    </div>
+    <div class="col-2 d-flex align-items-center">
+      {{ (item.item.price - (item.item.discount * item.item.price / 100)) * item.count }}
+    </div>
+
+  </div>
+</div>

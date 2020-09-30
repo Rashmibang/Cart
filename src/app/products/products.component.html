@@ -1,0 +1,20 @@
+<div class="subheader">
+  <div class="action-item">
+    <div><span>Sort</span></div>
+    <div><i class="fa fa-sort"></i></div>
+  </div>
+  <div class="action-item">
+    <div><span>Filter</span></div>
+    <div><i class="fas fa-filter"></i></div>
+  </div>
+</div>
+<div class="container">
+  <div class="display" *ngFor="let value of ItemsAvailable">
+    <img [src]="value.img"/>
+    <h4>{{value.name}}</h4>
+    Rs.{{getdiscountedprice(value)}}  <s><h6>Rs.{{value.price}}</h6></s> <h5>{{value.discount}} % off </h5>
+    <p>
+      <button (click)="cartItems(value)">Add to Cart</button>
+    </p>
+  </div>
+</div>

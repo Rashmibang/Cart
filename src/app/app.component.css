@@ -1,0 +1,40 @@
+.header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  background-color: blue;
+  padding: 10px 20px;
+}
+
+#star {
+  font-size: 30px;
+  color: white;
+}
+
+
+
+.cardContainer {
+  position: relative;
+}
+
+
+#cart {
+  font-size: 30px;
+  color: white;
+}
+
+#cardCounter {
+  position: absolute;
+  color: white;
+  background: red;
+  border: none;
+  border-radius: 50%;
+  padding: 2px 5px;
+  font-size: 10px;
+  bottom: 20px;
+  right: 5px;
+}
+
+.image {
+}

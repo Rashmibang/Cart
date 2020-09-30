@@ -1,0 +1,20 @@
+.searchContainer {
+  background: white;
+}
+
+.searchContainer input {
+  background: white;
+  border: none;
+  outline: none;
+  font-size: 16px;
+  margin: 5px;
+}
+
+.searchContainer button {
+  background: white;
+  border: none;
+  outline: none;
+  font-size: 16px;
+  color: #999;
+  margin: 5px;
+}

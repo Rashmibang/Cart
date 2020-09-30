@@ -1,0 +1,55 @@
+.subheader{
+  display:flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  background-color: lightgray;
+  padding:10px;
+}
+
+.action-item {
+  display: flex;
+  flex-direction: row;
+  font-size: 20px;
+  align-items: center;
+}
+
+.action-item div:first-child {
+  margin-right: 5px;
+}
+
+.container{
+  display:flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+
+}
+.display{
+  padding:10px;
+  margin: 10px;
+  text-align: center;
+  border: 1px solid #CCC;
+  width: 300px;
+  max-width: 300px;
+}
+
+button{
+  background-color: darkgoldenrod;
+  border-radius: 20px;
+  font-weight: bold;
+  padding:5px;
+  border:none;
+}
+
+h6{
+  font-weight: bold;
+}
+h5{
+  color:darkgreen;
+  font-weight: bold;
+}
+h4{
+  padding:10px;
+  margin-top: 10px;
+}
